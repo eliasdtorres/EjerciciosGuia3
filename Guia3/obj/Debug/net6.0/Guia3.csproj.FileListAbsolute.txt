@@ -1,0 +1,15 @@
+D:\Cursos\devLigth\Ejercicios\Guia3\Guia3\bin\Debug\net6.0\Guia3.exe
+D:\Cursos\devLigth\Ejercicios\Guia3\Guia3\bin\Debug\net6.0\Guia3.deps.json
+D:\Cursos\devLigth\Ejercicios\Guia3\Guia3\bin\Debug\net6.0\Guia3.runtimeconfig.json
+D:\Cursos\devLigth\Ejercicios\Guia3\Guia3\bin\Debug\net6.0\Guia3.dll
+D:\Cursos\devLigth\Ejercicios\Guia3\Guia3\bin\Debug\net6.0\Guia3.pdb
+D:\Cursos\devLigth\Ejercicios\Guia3\Guia3\obj\Debug\net6.0\Guia3.csproj.AssemblyReference.cache
+D:\Cursos\devLigth\Ejercicios\Guia3\Guia3\obj\Debug\net6.0\Guia3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cursos\devLigth\Ejercicios\Guia3\Guia3\obj\Debug\net6.0\Guia3.AssemblyInfoInputs.cache
+D:\Cursos\devLigth\Ejercicios\Guia3\Guia3\obj\Debug\net6.0\Guia3.AssemblyInfo.cs
+D:\Cursos\devLigth\Ejercicios\Guia3\Guia3\obj\Debug\net6.0\Guia3.csproj.CoreCompileInputs.cache
+D:\Cursos\devLigth\Ejercicios\Guia3\Guia3\obj\Debug\net6.0\Guia3.dll
+D:\Cursos\devLigth\Ejercicios\Guia3\Guia3\obj\Debug\net6.0\refint\Guia3.dll
+D:\Cursos\devLigth\Ejercicios\Guia3\Guia3\obj\Debug\net6.0\Guia3.pdb
+D:\Cursos\devLigth\Ejercicios\Guia3\Guia3\obj\Debug\net6.0\Guia3.genruntimeconfig.cache
+D:\Cursos\devLigth\Ejercicios\Guia3\Guia3\obj\Debug\net6.0\ref\Guia3.dll
