@@ -16,9 +16,9 @@ namespace Program
             //sv.sacarPromedio(alumno.notas);
 
             //Ejercicio 2 : Crear lista de personas y veirifcar edad
-            //List<Alumno> alumnos= new List<Alumno>();
-            //ServicioEj2 sv = new ServicioEj2 ();
-            //alumnos = sv.createAlumnList ();
+            List<Alumno> alumnos = new List<Alumno>();
+            //ServicioEj2 sv = new ServicioEj2();
+            //alumnos = sv.createAlumnList();
 
             //foreach (var item in alumnos)
             //{
@@ -27,6 +27,27 @@ namespace Program
             //}
 
             //sv.mostrarMayorDeEdad(alumnos);
+            string res;
+            ServicioEj3 sv = new ServicioEj3();
+            alumnos = sv.createAlumnList();
+            sv.mostrarMayorDeEdad(alumnos);
+            sv.mostrarNombreLargoCorto(alumnos);
+            do
+            {
+                Console.WriteLine("Mostrar listado de alumnos? s/n");
+                res = Console.ReadLine().ToLower();
+
+            } while (res != "s" && res != "n");
+
+            if (res=="s")
+            {
+                sv.mostrarLista(alumnos);
+            }
+            else
+            {
+                Console.WriteLine("fin del programa");
+            }
+           
 
 
         }

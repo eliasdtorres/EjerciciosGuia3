@@ -24,30 +24,31 @@ namespace Guia3.Ejercicio1___2___3.servicios
             do
             {
                 Alumno a = new Alumno();
-                a._name = "Alumno " + cont;
-                //a._lastName = "Alumno " + cont + "(apellido)";
+                a._name = "Alumno" + random.Next(1,100);
 
                 year = random.Next(2000, 2010);
                 month = random.Next(1, 12);
-                day = random.Next(1, 31);
+                day = random.Next(1, 28);
 
                 a._dateOfBirth = new DateTime(year, month, day);
                 a._age = a.getAge(a._dateOfBirth);
 
                 alumnos.Add(a);
+                
 
                 cont++;
             } while (cont <= 20);
 
 
             Console.WriteLine("------------------------------");
-            Console.WriteLine("ALUMNOS AÑADIDO");
+            Console.WriteLine("LISTA DE ALUMNOS CREADAS");
            
             return alumnos;
         }
 
         public void mostrarMayorDeEdad(List<Alumno> alumnos)
         {
+            int cont = 0;
             Console.WriteLine("==============================");
             Console.WriteLine("Mayor/es de edad: ");
             Console.WriteLine("==============================");
@@ -55,14 +56,30 @@ namespace Guia3.Ejercicio1___2___3.servicios
             {
                 if (item._age>=18)
                 {
+                    cont++;
                     Console.WriteLine(item.ToString(item));
                     Console.WriteLine("------------------------------");
                 }
             }
-
+            Console.WriteLine("=======================================");
+            Console.WriteLine("Cantidad de Mayor/es de edad: "+cont+"/"+alumnos.Count);
+            Console.WriteLine("=======================================");
         }
 
-
+        public void mostrarLista(List<Alumno> alumnos)
+        {
+            Console.WriteLine("*********************");
+            Console.WriteLine("Listado de alumnos");
+            Console.WriteLine("*********************");
+            
+            foreach (Alumno item in alumnos)
+            {
+                Console.WriteLine("--------------------");
+                Console.WriteLine(item.ToString(item));
+                Console.WriteLine("--------------------");
+                
+            }
+        }
 
     }
 }

@@ -57,7 +57,7 @@ namespace Guia3.Ejercicio1
         public int getAge(DateTime _dateOfBirth)
         {
             int age = DateTime.Today.AddTicks(-_dateOfBirth.Ticks).Year - 1;
-            Console.WriteLine("Edad: " + age);
+            
             return age;
         }
                         
