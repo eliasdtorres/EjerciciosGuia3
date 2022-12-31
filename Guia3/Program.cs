@@ -2,6 +2,7 @@
 using Guia3.Ejercicio1___2___3.servicios;
 using Guia3.Ejercicio4;
 using Guia3.Ejercicio5;
+using Guia3.Ejercicio6;
 using System;
 using System.Numerics;
 
@@ -125,32 +126,38 @@ namespace Program
             //===================================================================================================
             //Ejercicio 5 : Matriz Par Impar
 
+            //Matriz m = new Matriz();
+            //bool isOk;
+            //int res = 0;
 
+            //do
+            //{
+            //    try
+            //    {
+            //        Console.WriteLine("Ingrese tamaño matriz: ");
+            //        res = int.Parse(Console.ReadLine());
+            //        isOk = true;
+            //    }
+            //    catch (FormatException)
+            //    {
+            //        isOk = false;
+            //    }
+            //} while (!isOk);
 
+            //string[,] matriz = m.crearMatriz(res); 
+            //m.mostrarMatriz(matriz,res);
 
-            Matriz m = new Matriz();
-            bool isOk;
-            int res = 0;
-            do
-            {
-                try
-                {
-                    Console.WriteLine("Ingrese tamaño matriz: ");
-                    res = int.Parse(Console.ReadLine());
-                    isOk = true;
-                }
-                catch (FormatException)
-                {
-                    isOk = false;
-                }
-            } while (!isOk);
+            //===================================================================================================
+            //Ejercicio 6 : Matriz Temperatura
+            MatrizTemperatura m = new MatrizTemperatura();
 
-            string[,] matriz = m.crearMatriz(res); 
-            
-            m.mostrarMatriz(matriz,res);
-
-
-
+            int[,] matriz = m.temperaturas();
+            m.mostrarCalendario(matriz);
+            m.extremosSemanales(matriz);
+            Console.WriteLine("===========================");
+            m.promedio(matriz);
+            Console.WriteLine("===========================");
+            m.diaMensualMasCaluroso(matriz);
         }
     }
 }

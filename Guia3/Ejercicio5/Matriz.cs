@@ -9,9 +9,7 @@ namespace Guia3.Ejercicio5
 {
     internal class Matriz
     {
-
         public Matriz() { }
-
         public string[,] crearMatriz(int res)
         {
             string[,] matriz = new string[res, res];
@@ -30,10 +28,8 @@ namespace Guia3.Ejercicio5
                     }
                 }
             }
-
             return matriz;
         }
-
         public void mostrarMatriz(string[,] matriz, int res)
         {
             Console.WriteLine("==========================");
@@ -41,18 +37,12 @@ namespace Guia3.Ejercicio5
             Console.WriteLine("==========================");
             for (int i = 0; i < res; i++)
             {
-
                 for (int j = 0; j < res; j++)
                 {
                     Console.Write("[" + matriz[i, j] + "]");
                 }
-
                 Console.WriteLine("");
-
             }
-
         }
-
-
     }
 }

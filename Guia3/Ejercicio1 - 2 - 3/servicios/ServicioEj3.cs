@@ -36,16 +36,12 @@ namespace Guia3.Ejercicio1___2___3.servicios
                     menorCantLetras = actual;
                     alumnoMenosLetras = item;
                 }
-                else {
-
-
+                else 
+                {
                     anterior = actual;
                     mayorCantLetras = actual;
                     menorCantLetras = actual;
-
                 }
-
-
             }
 
             if (mayorCantLetras != menorCantLetras)
