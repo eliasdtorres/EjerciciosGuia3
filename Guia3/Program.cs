@@ -3,6 +3,7 @@ using Guia3.Ejercicio1___2___3.servicios;
 using Guia3.Ejercicio4;
 using Guia3.Ejercicio5;
 using Guia3.Ejercicio6;
+using Guia3.Ejercicio7;
 using System;
 using System.Numerics;
 
@@ -149,15 +150,25 @@ namespace Program
 
             //===================================================================================================
             //Ejercicio 6 : Matriz Temperatura
-            MatrizTemperatura m = new MatrizTemperatura();
+            //MatrizTemperatura m = new MatrizTemperatura();
 
-            int[,] matriz = m.temperaturas();
-            m.mostrarCalendario(matriz);
-            m.extremosSemanales(matriz);
-            Console.WriteLine("===========================");
-            m.promedio(matriz);
-            Console.WriteLine("===========================");
-            m.diaMensualMasCaluroso(matriz);
+            //int[,] matriz = m.temperaturas();
+            //m.mostrarCalendario(matriz);
+            //m.extremosSemanales(matriz);
+            //Console.WriteLine("===========================");
+            //m.promedio(matriz);
+            //Console.WriteLine("===========================");
+            //m.diaMensualMasCaluroso(matriz);
+
+            //===================================================================================================
+            //Ejercicio 7 : Matriz de tablas
+            Tabla t = new Tabla();
+            int[,] tabla = t.crearMatriz();
+            t.mostrarMatriz(tabla);
+
+            //===================================================================================================
+            //Ejercicio 8 :
+
         }
     }
 }

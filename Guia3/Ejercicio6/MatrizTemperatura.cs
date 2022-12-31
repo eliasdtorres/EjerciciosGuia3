@@ -235,9 +235,7 @@ namespace Guia3.Ejercicio6
                             diaMayor = "Domingo";
                         }
                     }
-
                 }
-               
             }
             Console.WriteLine("Dia con mayor temperatura: "+ diaMayor + " con " + mayor + "°C.");
         }
