@@ -1,5 +1,6 @@
 ﻿using Guia3.Ejercicio1;
 using Guia3.Ejercicio1___2___3.servicios;
+using Guia3.Ejercicio4;
 using System;
 
 namespace Program
@@ -15,8 +16,10 @@ namespace Program
             //alumno = sv.crearListaDeNotas();
             //sv.sacarPromedio(alumno.notas);
 
+            //=======================================================================================
             //Ejercicio 2 : Crear lista de personas y veirifcar edad
-            List<Alumno> alumnos = new List<Alumno>();
+
+            //List<Alumno> alumnos = new List<Alumno>();
             //ServicioEj2 sv = new ServicioEj2();
             //alumnos = sv.createAlumnList();
 
@@ -27,29 +30,94 @@ namespace Program
             //}
 
             //sv.mostrarMayorDeEdad(alumnos);
-            string res;
-            ServicioEj3 sv = new ServicioEj3();
-            alumnos = sv.createAlumnList();
-            sv.mostrarMayorDeEdad(alumnos);
-            sv.mostrarNombreLargoCorto(alumnos);
-            do
-            {
-                Console.WriteLine("Mostrar listado de alumnos? s/n");
-                res = Console.ReadLine().ToLower();
 
-            } while (res != "s" && res != "n");
+            //=======================================================================================
+            //Ejercicio 3 : Nombre mas largo y mas corto
+            //string res;
+            //List<Alumno> alumnos = new List<Alumno>();
+            //ServicioEj3 sv = new ServicioEj3();
+            //alumnos = sv.createAlumnList();
+            //sv.mostrarMayorDeEdad(alumnos);
+            //sv.mostrarNombreLargoCorto(alumnos);
+            //do
+            //{
+            //    Console.WriteLine("Mostrar listado de alumnos? s/n");
+            //    res = Console.ReadLine().ToLower();
 
-            if (res=="s")
-            {
-                sv.mostrarLista(alumnos);
-            }
-            else
-            {
-                Console.WriteLine("fin del programa");
-            }
-           
+            //} while (res != "s" && res != "n");
 
+            //if (res=="s")
+            //{
+            //    sv.mostrarLista(alumnos);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("fin del programa");
+            //}
 
+            //=======================================================================================
+            //Ejercicio 4 : Lista de compras
+
+            //Producto producto = new Producto();
+            //string[][] listas= new string[2][];
+            //List<string> lista = new List<string>();
+            //int res = 0;  
+            //bool isOk= false;
+            //lista = producto.listaDeProductos();
+            //listas = producto.comprar(lista);
+
+            //if (listas[0]!=null)
+            //{
+            //    do
+            //    {
+            //        do
+            //        {
+            //            try
+            //            {
+            //                Console.WriteLine("Seleccione opción");
+            //                Console.WriteLine("1- Mostrar lista de productos no comprados y comprados pero agregados" +
+            //                    "\n2- Mostrar lista de productos comprados\n3- Fin");
+            //                res = int.Parse(Console.ReadLine());
+            //                isOk = true;
+            //            }
+            //            catch (FormatException)
+            //            {
+            //                Console.WriteLine("Debe elegir una opcíon numérica válida");
+            //                isOk = false;
+            //            }
+            //        } while (!isOk);
+
+            //        switch (res)
+            //        {
+            //            case 1:
+            //                Console.WriteLine("Lista de productos final (No comprados y comprados pero agregados)");
+            //                Console.WriteLine("-------------------");
+            //                foreach (var item in listas[0])
+            //                {
+            //                    Console.WriteLine("- "+item);
+            //                }
+            //                Console.WriteLine("-------------------");
+            //                break;
+            //            case 2:
+            //                Console.WriteLine("-------------------");
+            //                Console.WriteLine("Productos comprados");
+            //                foreach (var item in listas[1])
+            //                {
+            //                    Console.WriteLine("- " + item);
+            //                }
+            //                Console.WriteLine("-------------------");
+            //                break;
+            //            case 3:
+            //                Console.WriteLine("Fin del programa");
+            //                break;
+            //            default:
+            //                Console.WriteLine("Debe elegir una opcíon numérica válida");
+            //                break;
+            //        }
+
+            //    } while (res != 3);
+            //}
+            //else{}
         }
     }
 }
