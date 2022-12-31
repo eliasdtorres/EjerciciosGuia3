@@ -1,7 +1,9 @@
 ﻿using Guia3.Ejercicio1;
 using Guia3.Ejercicio1___2___3.servicios;
 using Guia3.Ejercicio4;
+using Guia3.Ejercicio5;
 using System;
+using System.Numerics;
 
 namespace Program
 {
@@ -55,7 +57,7 @@ namespace Program
             //    Console.WriteLine("fin del programa");
             //}
 
-            //=======================================================================================
+            //===================================================================================================
             //Ejercicio 4 : Lista de compras
 
             //Producto producto = new Producto();
@@ -118,6 +120,37 @@ namespace Program
             //    } while (res != 3);
             //}
             //else{}
+
+
+            //===================================================================================================
+            //Ejercicio 5 : Matriz Par Impar
+
+
+
+
+            Matriz m = new Matriz();
+            bool isOk;
+            int res = 0;
+            do
+            {
+                try
+                {
+                    Console.WriteLine("Ingrese tamaño matriz: ");
+                    res = int.Parse(Console.ReadLine());
+                    isOk = true;
+                }
+                catch (FormatException)
+                {
+                    isOk = false;
+                }
+            } while (!isOk);
+
+            string[,] matriz = m.crearMatriz(res); 
+            
+            m.mostrarMatriz(matriz,res);
+
+
+
         }
     }
 }
