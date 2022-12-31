@@ -4,6 +4,7 @@ using Guia3.Ejercicio4;
 using Guia3.Ejercicio5;
 using Guia3.Ejercicio6;
 using Guia3.Ejercicio7;
+using Guia3.Ejercicio8;
 using System;
 using System.Numerics;
 
@@ -162,12 +163,19 @@ namespace Program
 
             //===================================================================================================
             //Ejercicio 7 : Matriz de tablas
-            Tabla t = new Tabla();
-            int[,] tabla = t.crearMatriz();
-            t.mostrarMatriz(tabla);
+            //Tabla t = new Tabla();
+            //int[,] tabla = t.crearMatriz();
+            //t.mostrarMatriz(tabla);
 
             //===================================================================================================
-            //Ejercicio 8 :
+            //Ejercicio 8 : Buscaminas
+
+            Buscaminas b = new Buscaminas();
+            string[,] buscaminas = new string[10,10];
+            buscaminas = b.crearTerreno();
+            //b.mostrarTerreno(buscaminas); /* descomentar para verificar posiciones en terreno */
+            b.jugar(buscaminas);
+            b.mostrarTerreno(buscaminas);
 
         }
     }
